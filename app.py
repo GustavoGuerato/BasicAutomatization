@@ -35,6 +35,26 @@ class ChromeAuto:
         except Exception as e:
             print('erro ao clicar no perfil', e)
 
+    def faz_logout(self):
+        try:
+            logout = self.chrome.find_element(By.CSS_SELECTOR,
+                                              'body > div.position-relative.js-header-wrapper > header > '
+                                              'div.Header-item.position-relative.mr-0.d-none.d-lg-flex > details > '
+                                              'details-menu > form > button')
+            logout.click()
+        except Exception as e:
+            print('ocorreu o seguinte erro:', e)
+
+    def verifica_usuario(self,usuario):
+        soueu = WebDriverWait(self.chrome, 10).until(
+            ec.presence_of_element_located((By.LINK_TEXT, 'GustavoGuerato'))
+        )
+        profile_link_html = soueu.get_attribute('innerHTML')
+        print(profile_link_html)
+        assert usuario in profile_link_html
+
+
+
     def faz_login(self):
         try:
             input_login = self.chrome.find_element(By.ID, 'login_field')
@@ -44,7 +64,7 @@ class ChromeAuto:
             )
             input_login.send_keys(username)
             input_password.send_keys(password)
-            sleep(14)
+            sleep(5)
             btn_login.click()
         except Exception as e:
             print(f"Erro ao clicar em 'Sign in': {str(e)}")
@@ -53,9 +73,11 @@ class ChromeAuto:
 if __name__ == '__main__':
     chrome = ChromeAuto()
     chrome.acessa('https://github.com/')
-    chrome.clica_perfil()
+
     chrome.clica_login()
     chrome.faz_login()
+    chrome.clica_perfil()
+    chrome.faz_logout()
 
     sleep(20)
     chrome.sair()
