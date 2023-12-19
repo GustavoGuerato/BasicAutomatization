@@ -42,8 +42,8 @@ class ChromeAuto:
             btn_login = WebDriverWait(self.chrome, 10).until(
                 ec.presence_of_element_located((By.NAME, 'commit'))
             )
-            input_login.send_keys('GustavoGuerato')
-            input_password.send_keys('gg08142325')
+            input_login.send_keys(username)
+            input_password.send_keys(password)
             sleep(14)
             btn_login.click()
         except Exception as e:
@@ -53,8 +53,9 @@ class ChromeAuto:
 if __name__ == '__main__':
     chrome = ChromeAuto()
     chrome.acessa('https://github.com/')
+    chrome.clica_perfil()
     chrome.clica_login()
     chrome.faz_login()
-    chrome.clica_perfil()
+
     sleep(20)
     chrome.sair()

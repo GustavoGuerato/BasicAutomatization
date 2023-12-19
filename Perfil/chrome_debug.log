@@ -1,12 +1,12 @@
-[5948:10376:1219/154034.859:WARNING:chrome_main_delegate.cc(667)] This is Chrome version 120.0.6099.110 (not a warning)
-[5948:10376:1219/154035.260:INFO:policy_logger.cc(144)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(168) Starting CBCM Controller Initialization
-[5948:10376:1219/154035.260:INFO:policy_logger.cc(144)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(196) No machine level policy manager exists.
-[5948:12176:1219/154040.474:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:12044:1219/154045.147:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:12044:1219/154050.159:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:5556:1219/154055.169:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:12044:1219/154100.174:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:12044:1219/154105.184:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:12244:1219/154110.186:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:11988:1219/154115.188:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
-[5948:10376:1219/154117.334:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
+[8732:9784:1219/154530.875:WARNING:chrome_main_delegate.cc(667)] This is Chrome version 120.0.6099.110 (not a warning)
+[8732:9784:1219/154531.427:INFO:policy_logger.cc(144)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(168) Starting CBCM Controller Initialization
+[8732:9784:1219/154531.427:INFO:policy_logger.cc(144)] :components\enterprise\browser\controller\chrome_browser_cloud_management_controller.cc(196) No machine level policy manager exists.
+[8732:10272:1219/154536.556:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:8692:1219/154541.358:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:8692:1219/154546.357:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:8692:1219/154551.358:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:2476:1219/154556.360:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:8612:1219/154601.377:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:2476:1219/154606.378:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:10272:1219/154611.382:WARNING:page_discarding_helper.cc(126)] Discarding multiple pages with target (kb): 0
+[8732:9784:1219/154615.844:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.
